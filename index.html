@@ -31,9 +31,9 @@
                     <label for="firstName">FIRST NAME</label>
                     <input type="text" placeholder="John" id="firstName" minlength="2" required>
                     <label for="email">EMAIL</label>
-                    <input type="email" placeholder="agentsmith@matrix.com" id="email" required>
+                    <input type="email" placeholder="agentsmth@matrix.com" id="email" required>
                     <label for="password">PASSWORD</label>
-                    <input type="password" id="password">
+                    <input type="password" id="password" minlength="8" placeholder="********" required>
                 </div>
                 <div class="form-column-2">
                     <label for="lastName">LAST NAME</label>
@@ -41,7 +41,7 @@
                     <label for="phoneNumber">PHONE NUMBER</label>
                     <input type="tel" id="phoneNumber" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                     <label for="confirmPassword">CONFIRM PASSWORD</label>
-                    <input type="password" id="confirmPassword">
+                    <input type="password" placeholder="********"id="confirmPassword" minlength="8" required>
                 </div>
                 <div class="progress-circle"></div>
             </fieldset>

@@ -93,6 +93,7 @@ label {
 }
 
 input {
+    width: 150px;
     margin-left: 4vw;
     margin-bottom: 3vh;
     margin-top: 1vh;

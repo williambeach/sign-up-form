@@ -5,8 +5,13 @@ for (let i = 0; i < formInputs.length; i++) {
     formInputs[i].addEventListener('change', () => {
         if (formInputs[i].validity.valid) {
             numValid++;
+        } 
+        if (!formInputs[i].validity.valid) {
+            numValid--;
         }
-        if (numValid == 1) {
+        if (numValid == 0) {
+            progressCircle.className = 'progress-circle'
+        } else if (numValid == 1) {
             progressCircle.className = 'progress-one';
         } else if (numValid == 2) {
             progressCircle.className = 'progress-two';
