@@ -1,0 +1,1 @@
+This project is from The Odin Project's sign-up form assignment that enables us to use what we've learned from reading more intensively about css. Specifically, property values, functions, and variables. 

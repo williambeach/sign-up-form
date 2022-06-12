@@ -8,7 +8,6 @@
     src: url('fonts/1942.ttf')
 }
 
-
 body {
     height: 100vh;
     display: flex;
@@ -22,8 +21,6 @@ body {
     height: 100vh;
     background-image: url('pictures/matrix.webp');
     background-size: 100% 100%;
-    
-    
 }
 
 #transparent-container {
@@ -37,7 +34,6 @@ body {
     background-color: rgba(0,0,0,0.5);
     height: 13vh;
     margin-top: 24vh;
-
 }
 
 footer {
@@ -55,14 +51,14 @@ a {
     text-decoration: none;
     color: white;
 }
+
 #sign-up-container {
     display: flex;
     flex-direction: column;
     width: 65vw;
     height: 100vh;
-    background-color: rgb(0,0,0);
+    background-color: black;
 }
-
 
 header {
     margin-left: 5vw;
@@ -71,5 +67,163 @@ header {
     font-size: 1.2rem;
     font-weight: bold;
     color: white;
+}
+
+
+
+fieldset {
+    display: flex;
+    border: #00FF41;
+    border-style: double;
+    column-gap: 8vw;
+    margin-top: 6.6vh;
+}
+
+legend {
+    margin-left: auto;
+    color: white;
+    font-family: Matrix;
+    font-size: 1.4rem;
+}
+
+label {
+    color: white;
+    margin-left: 4vw;
+    font-family: Matrix;
+}
+
+input {
+    margin-left: 4vw;
+    margin-bottom: 3vh;
+    margin-top: 1vh;
+    height: 1.4rem;
+    border-radius: 5px;
+    line-height: 1.2rem;
+}
+
+input:not(:placeholder-shown):invalid {
+    border: red 2px solid;
+}
+
+.form-column-1 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2.5vh;
+}
+
+.form-column-2 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2.5vh;
     
+}
+
+.form-progress-bar {
+    display: flex;
+    align-items: center;
+}
+
+.progress-circle::after {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(black 50%, transparent 40%),
+    conic-gradient(#00FF41 0deg 360deg);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    content: "0%";
+    color: white;
+}
+
+.progress-one::after {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(black 50%, transparent 40%),
+    conic-gradient(#008F11 0deg 61.2deg, #00FF41 61.2deg 360deg);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    content: "17%";
+    color: white;
+}
+
+.progress-two::after {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(black 50%, transparent 40%),
+    conic-gradient(#008F11 0deg 118.8deg, #00FF41 118.8deg 360deg );
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    content: "33%";
+    color: white;
+}
+
+.progress-three::after {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(black 50%, transparent 40%),
+    conic-gradient(#008F11 118.8deg 180deg, #00FF41 180deg 360deg);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    content: "50%";
+    color: white;
+}
+
+.progress-four::after {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(black 50%, transparent 40%),
+    conic-gradient(#008F11 180deg 241.2deg, #00FF41 241.2deg 360deg);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    content: "67%";
+    color: white;
+}
+
+.progress-five::after {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(black 50%, transparent 40%),
+    conic-gradient(#008F11 241.2deg 298.8deg, #00FF41 298.8deg 360deg);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    content: "83%";
+    color: white;
+}
+
+.progress-six::after {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(black 50%, transparent 40%),
+    conic-gradient(#008F11 298.8deg 360deg);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    content: "100%";
+    color: white;
 }

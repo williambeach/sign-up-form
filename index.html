@@ -24,7 +24,28 @@
                 <p>You <em>know</em>
                 you want to.</p>
         </header>
-        
+        <form action="#" id="form">
+            <fieldset>
+                <legend>Plug In Now</legend>
+                <div class="form-column-1">
+                    <label for="firstName">FIRST NAME</label>
+                    <input type="text" placeholder="John" id="firstName" minlength="2" required>
+                    <label for="email">EMAIL</label>
+                    <input type="email" placeholder="agentsmith@matrix.com" id="email" required>
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password">
+                </div>
+                <div class="form-column-2">
+                    <label for="lastName">LAST NAME</label>
+                    <input type="text" placeholder="Smith" id="lastName" minlength="2" required>
+                    <label for="phoneNumber">PHONE NUMBER</label>
+                    <input type="tel" id="phoneNumber" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    <label for="confirmPassword">CONFIRM PASSWORD</label>
+                    <input type="password" id="confirmPassword">
+                </div>
+                <div class="progress-circle"></div>
+            </fieldset>
+        </form>
     </div>
 </body>
 </html>
