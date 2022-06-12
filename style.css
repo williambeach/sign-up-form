@@ -17,7 +17,7 @@ body {
 #pic-container {
     display: flex;
     flex-direction: column;
-    width: 35vw;
+    width: 40vw;
     height: 100vh;
     background-image: url('pictures/matrix.webp');
     background-size: 100% 100%;
@@ -26,13 +26,12 @@ body {
 #transparent-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     align-items: center;
     font-family: Matrix;
-    font-size: clamp(2vh,5vh,6vh);
+    font-size: 5vh;
     color: white;
     background-color: rgba(0,0,0,0.5);
-    height: 13vh;
+    height: 16vh;
     margin-top: 24vh;
 }
 
@@ -54,20 +53,23 @@ a {
 
 #sign-up-container {
     display: flex;
+    flex-shrink: 1;
     flex-direction: column;
-    width: 65vw;
     height: 100vh;
+    width: 100vw;
     background-color: black;
 }
 
 header {
     margin-left: 5vw;
+    margin-right: auto;
     margin-top: 10vh;
     font-family: Main;
-    font-size: 1.2rem;
+    font-size: 2vw;
     font-weight: bold;
     color: white;
 }
+
 
 
 
@@ -77,6 +79,7 @@ fieldset {
     border-style: double;
     column-gap: 8vw;
     margin-top: 6.6vh;
+    
 }
 
 legend {
@@ -227,4 +230,14 @@ input:not(:placeholder-shown):invalid {
     height: 100px;
     content: "100%";
     color: white;
+}
+
+#form {
+    overflow: auto;
+}
+
+@media screen and (max-width: 984px) {
+    #transparent-container {
+        font-size: 4vh;
+    }
 }

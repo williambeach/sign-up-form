@@ -17,35 +17,39 @@
         <footer>Programmed by <a href="https://github.com/williambeach" target="_blank">Willy boy Beach</a></footer>
     </div>
     <div id="sign-up-container">
-        <header><p>This is not a real online service!</p>
+        <div id="header">
+            <header><p>This is not a real online service!</p>
                 <p>That's because
                 nothing in the matrix is real...</p>
                 <p>Take the blue pill.</p> 
                 <p>You <em>know</em>
                 you want to.</p>
         </header>
-        <form action="#" id="form">
-            <fieldset>
-                <legend>Plug In Now</legend>
-                <div class="form-column-1">
-                    <label for="firstName">FIRST NAME</label>
-                    <input type="text" placeholder="John" id="firstName" minlength="2" required>
-                    <label for="email">EMAIL</label>
-                    <input type="email" placeholder="agentsmth@matrix.com" id="email" required>
-                    <label for="password">PASSWORD</label>
-                    <input type="password" id="password" minlength="8" placeholder="********" required>
-                </div>
-                <div class="form-column-2">
-                    <label for="lastName">LAST NAME</label>
-                    <input type="text" placeholder="Smith" id="lastName" minlength="2" required>
-                    <label for="phoneNumber">PHONE NUMBER</label>
-                    <input type="tel" id="phoneNumber" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-                    <label for="confirmPassword">CONFIRM PASSWORD</label>
-                    <input type="password" placeholder="********"id="confirmPassword" minlength="8" required>
-                </div>
-                <div class="progress-circle"></div>
-            </fieldset>
-        </form>
+        </div>
+        <div id="form">
+            <form action="#">
+                <fieldset>
+                    <legend>Plug In Now</legend>
+                    <div class="form-column-1">
+                        <label for="firstName">FIRST NAME</label>
+                        <input type="text" placeholder="John" id="firstName" minlength="2" required>
+                        <label for="email">EMAIL</label>
+                        <input type="email" placeholder="agentsmth@matrix.com" id="email" required>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" minlength="8" placeholder="********" required>
+                    </div>
+                    <div class="form-column-2">
+                        <label for="lastName">LAST NAME</label>
+                        <input type="text" placeholder="Smith" id="lastName" minlength="2" required>
+                        <label for="phoneNumber">PHONE NUMBER</label>
+                        <input type="tel" id="phoneNumber" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                        <label for="confirmPassword">CONFIRM PASSWORD</label>
+                        <input type="password" placeholder="********"id="confirmPassword" minlength="8" required>
+                    </div>
+                    <div class="progress-circle"></div>
+                </fieldset>
+            </form>
+        </div>  
     </div>
 </body>
 </html>
