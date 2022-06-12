@@ -24,7 +24,7 @@
                 <p>You <em>know</em>
                 you want to.</p>
         </header>
-        <form action="#">
+        <form action="#" id="form">
             <fieldset>
                 <legend>Plug In Now</legend>
                 <div class="form-column-1">
@@ -39,10 +39,11 @@
                     <label for="lastName">LAST NAME</label>
                     <input type="text" id="lastName">
                     <label for="phoneNumber">PHONE NUMBER</label>
-                    <input type="tel" id="phoneNumber">
+                    <input type="tel" id="phoneNumber" placeholder="xxx-xxx-xxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                     <label for="confirmPassword">CONFIRM PASSWORD</label>
                     <input type="password" id="confirmPassword">
                 </div>
+                <div class="progress-circle"></div>
             </fieldset>
         </form>
     </div>
