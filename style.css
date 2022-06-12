@@ -8,7 +8,6 @@
     src: url('fonts/1942.ttf')
 }
 
-
 body {
     height: 100vh;
     display: flex;
@@ -22,8 +21,6 @@ body {
     height: 100vh;
     background-image: url('pictures/matrix.webp');
     background-size: 100% 100%;
-    
-    
 }
 
 #transparent-container {
@@ -37,7 +34,6 @@ body {
     background-color: rgba(0,0,0,0.5);
     height: 13vh;
     margin-top: 24vh;
-
 }
 
 footer {
@@ -55,6 +51,7 @@ a {
     text-decoration: none;
     color: white;
 }
+
 #sign-up-container {
     display: flex;
     flex-direction: column;
@@ -63,7 +60,6 @@ a {
     background-color: rgb(0,0,0);
 }
 
-
 header {
     margin-left: 5vw;
     margin-top: 10vh;
@@ -71,5 +67,50 @@ header {
     font-size: 1.2rem;
     font-weight: bold;
     color: white;
+}
+
+
+
+fieldset {
+    display: flex;
+    border: #00FF41;
+    border-style: double;
+    column-gap: 8vw;
+    margin-top: 6.6vh;
+}
+
+legend {
+    margin-left: auto;
+    color: white;
+    font-family: Matrix;
+    font-size: 1.4rem;
+}
+
+label {
+    color: white;
+    margin-left: 4vw;
+    font-family: Matrix;
+}
+
+input {
+    margin-left: 4vw;
+    margin-bottom: 3vh;
+    margin-top: 1vh;
+}
+
+input:invalid {
+    border: red 2px solid;
+}
+
+.form-column-1 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2.5vh;
+}
+
+.form-column-2 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2.5vh;
     
 }
