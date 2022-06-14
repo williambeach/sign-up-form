@@ -6,9 +6,11 @@ for (let i = 0; i < formInputs.length; i++) {
         if (formInputs[i].validity.valid) {
             numValid++;
         } 
-        if (!formInputs[i].validity.valid) {
+        if (formInputs[i].value == "") {
             numValid--;
+            
         }
+    
         if (numValid == 0) {
             progressCircle.className = 'progress-circle'
         } else if (numValid == 1) {
