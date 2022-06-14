@@ -8,6 +8,8 @@
     src: url('fonts/1942.ttf')
 }
 
+
+
 body {
     height: 100vh;
     display: flex;
@@ -17,12 +19,13 @@ body {
 #pic-container {
     display: flex;
     flex-direction: column;
-    width: 45vw;
+    width: 40vw;
     height: 100vh;
 }
 
 img {
     height: 100vh;
+
 }
 
 #transparent-container {
@@ -31,7 +34,7 @@ img {
     justify-content: center;
     align-items: center;
     font-family: Matrix;
-    width: 45vw;
+    width: 40vw;
     font-size: 5vh;
     color: white;
     background-color: rgba(70, 255, 86, 0.1);
@@ -40,12 +43,14 @@ img {
 }
 
 footer {
+    display: flex;
+    justify-content: center;
     position: absolute;
     opacity: 0.7;
     font-size: min(1vw, 2vw);
     font-family: Matrix;
     color: white;
-    margin-left: 16vw;
+    margin-left: 13vw;
     margin-top: 96vh;
     padding-bottom: 0.5vh;
 }
@@ -53,6 +58,11 @@ footer {
 a {
     text-decoration: none;
     color: white;
+}
+
+a#login {
+    color: #00FF41;
+    font-weight: bolder;
 }
 
 #sign-up-container {
@@ -236,6 +246,8 @@ input:not(:placeholder-shown):invalid {
 .bottom {
     display: flex;
     column-gap: 10.5vw;
+    margin-bottom: 4vh;
+
 }
 
 
@@ -247,7 +259,7 @@ button {
     top: 3vh;
     width: 130px;
     height: 30px;
-    margin-left: 5.5vw;
+    margin-left: 5.2vw;
     border-radius: 10px;
 }
 
@@ -279,6 +291,13 @@ button:hover {
     top: 3vh;
 }
 
+span {
+    color: white;
+    margin-left: 5.2vw;
+    margin-top: 2vh;
+    font-family: Main;
+}
+
 @media screen and (max-width: 1427px) {
     fieldset {
         column-gap: 5vw;
@@ -296,6 +315,7 @@ button:hover {
     .progress-six::after {
         width: 100px;
         height: 100px;
+        margin-left: 2vw;
     }
 }
 
@@ -321,7 +341,7 @@ button:hover {
     .progress-six::after {
         width: 75px;
         height: 75px;
-        margin-left: 2vw;
+        margin-left: 4vw;
     }
 }
 
@@ -335,7 +355,23 @@ button:hover {
     footer {
         margin-left: 15vw;
     }
+    .progress-circle::after, .progress-one::after,
+    .progress-two::after, .progress-three::after,
+    .progress-four::after, .progress-five::after,
+    .progress-six::after {
+        margin-left: 3vw;
+    }
 }
+
+@media screen and (max-width: 943px) {
+    .progress-circle::after, .progress-one::after,
+    .progress-two::after, .progress-three::after,
+    .progress-four::after, .progress-five::after,
+    .progress-six::after {
+        margin-left: 2vw;
+    }
+}
+
 
 @media screen and (max-width: 922px) {
     #pic-container {
@@ -356,5 +392,14 @@ button:hover {
     }
     footer {
         margin-left: 14vw;
+    }
+}
+
+@media screen and (max-width: 848px) {
+    #pic-container {
+        width: 35vw;
+    }
+    #transparent-container {
+        width: 35vw;
     }
 }
