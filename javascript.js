@@ -1,5 +1,8 @@
 const formInputs = document.querySelectorAll("input");
 const progressCircle = document.querySelector(".progress-circle");
+const messageBox = document.querySelector(".message");
+
+
 let numValid = 0;
 for (let i = 0; i < formInputs.length; i++) {
     formInputs[i].addEventListener('change', () => {
@@ -30,6 +33,17 @@ for (let i = 0; i < formInputs.length; i++) {
 }
 
 
-
+function check_pass() {
+    if (document.getElementById('password').value ==
+    document.getElementById('confirmPassword').value && 
+    document.getElementById('password').value !== "" && 
+    document.getElementById('confirmPassword').value !== "") {
+        document.getElementById('button').disabled = false;
+        messageBox.className = "passwords-ok";
+    } else {
+        document.getElementById('button').disabled = true;
+        messageBox.className = "error-message";
+    }
+}
 
 

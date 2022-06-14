@@ -229,6 +229,52 @@ input:not(:placeholder-shown):invalid {
     overflow: auto;
 }
 
+.bottom {
+    display: flex;
+    column-gap: 10.5vw;
+}
+
+
+button {
+    background-color: #00FF41;
+    font-family: Matrix;
+    color: black;
+    position: relative;
+    top: 3vh;
+    width: 130px;
+    height: 30px;
+    margin-left: 5.5vw;
+    border-radius: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.error-message::after {
+    content: "Passwords Do Not Match!";
+    background-color: black;
+    font-family: Main;
+    color: red;
+    font-size: 1.1rem;
+    height: 30px;
+    width: 170px;
+    position: relative;
+    top: 3vh;
+}
+
+.passwords-ok::after {
+    content: "Passwords Match!";
+    background-color: black;
+    font-family: Main;
+    color: #00FF41;
+    font-size: 1.1rem;
+    height: 30px;
+    width: 170px;
+    position: relative;
+    top: 3vh;
+}
+
 @media screen and (max-width: 1000px) {
     fieldset {
         column-gap: 5vw;
