@@ -19,8 +19,6 @@ body {
     flex-direction: column;
     width: 45vw;
     height: 100vh;
-    /*background-image: url('pictures/matrix.webp');
-    background-size: 100% 100%;*/
 }
 
 img {
@@ -36,7 +34,7 @@ img {
     width: 45vw;
     font-size: 5vh;
     color: white;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(70, 255, 86, 0.1);
     height: 16vh;
     margin-top: 24vh;
 }
