@@ -308,15 +308,6 @@ span {
     fieldset {
         column-gap: 4vw;
     }
-
-    .progress-circle::after, .progress-one::after,
-    .progress-two::after, .progress-three::after,
-    .progress-four::after, .progress-five::after,
-    .progress-six::after {
-        width: 100px;
-        height: 100px;
-        margin-left: 2vw;
-    }
 }
 
 @media screen and (max-width: 1152px) {
@@ -329,9 +320,15 @@ span {
     fieldset {
         column-gap: 2vw;
     }
+    .progress-circle::after, .progress-one::after,
+    .progress-two::after, .progress-three::after,
+    .progress-four::after, .progress-five::after,
+    .progress-six::after {
+        margin-left: 1vw;
+    }
 }
 
-@media screen and (max-width: 1045px) {
+@media screen and (max-width: 1062px) {
     fieldset {
         column-gap: 1vw;
     }
@@ -339,18 +336,16 @@ span {
     .progress-two::after, .progress-three::after,
     .progress-four::after, .progress-five::after,
     .progress-six::after {
-        width: 75px;
-        height: 75px;
+        width: 100px;
+        height: 100px;
         margin-left: 4vw;
     }
 }
 
 @media screen and (max-width: 987px) {
-    #pic-container {
-        width: 42vw;
-    }
+    
     #transparent-container {
-        width: 42vw;
+        width: 40vw;
     }
     footer {
         margin-left: 15vw;
@@ -363,31 +358,31 @@ span {
     }
 }
 
-@media screen and (max-width: 943px) {
+@media screen and (max-width: 956px) {
     .progress-circle::after, .progress-one::after,
     .progress-two::after, .progress-three::after,
     .progress-four::after, .progress-five::after,
     .progress-six::after {
-        margin-left: 2vw;
+        margin-left: 1vw;
     }
 }
 
 
 @media screen and (max-width: 922px) {
     #pic-container {
-        width: 40vw;
+        width: 38vw;
     }
     #transparent-container {
-        width: 40vw;
+        width: 38vw;
     }
 }
 
-@media screen and (max-width: 884px) {
+@media screen and (max-width: 881px) {
     #pic-container {
-        width: 38vw;
+        width: 36vw;
     }
     #transparent-container {
-        width: 38vw;
+        width: 36vw;
         font-size: 4vh;
     }
     footer {
@@ -402,4 +397,32 @@ span {
     #transparent-container {
         width: 35vw;
     }
+    footer {
+        margin-left: 13vw;
+    }
+}
+
+@media screen and (max-width: 832px) {
+    .progress-circle::after, .progress-one::after,
+    .progress-two::after, .progress-three::after,
+    .progress-four::after, .progress-five::after,
+    .progress-six::after {
+        width: 75px;
+        height: 75px;
+        
+    }
+    footer {
+        margin-left: 12vw;
+    }
+}
+
+@media screen and (max-width: 832px) {
+    #pic-container {
+        width: 33vw;
+    }
+    #transparent-container {
+        width: 33vw;
+        
+    }
+
 }
