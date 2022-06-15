@@ -15,12 +15,17 @@ body {
 }
 
 #pic-container {
+    background: url('gifs/Matrix.gif') ;
     display: flex;
     flex-direction: column;
-    width: 45vw;
+    width: 50vw;
     height: 100vh;
-    background-image: url('pictures/matrix.webp');
-    background-size: 100% 100%;
+
+}
+
+img {
+    height: 100vh;
+    width: 100%;
 }
 
 #transparent-container {
@@ -28,22 +33,23 @@ body {
     justify-content: center;
     align-items: center;
     font-family: Matrix;
-    font-size: 5vh;
+    width: 100%;
+    font-size: 4vw;
     color: white;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(70, 255, 86, 0.1);
     height: 16vh;
     margin-top: 24vh;
 }
 
 footer {
+    display: flex;
+    justify-content: center;
     opacity: 0.7;
-    margin-top: auto;
-    font-size: min(1vw, 2vw);
+    font-size: 1.5vw;
     font-family: Matrix;
     color: white;
-    margin-left: auto;
-    margin-right: auto;
     padding-bottom: 0.5vh;
+    margin-top: auto;
 }
 
 a {
@@ -51,12 +57,17 @@ a {
     color: white;
 }
 
+a#login {
+    color: #00FF41;
+    font-weight: bolder;
+}
+
 #sign-up-container {
     display: flex;
     flex-direction: column;
+    width: 100%;
     height: 100vh;
     background-color: black;
-    
 }
 
 header {
@@ -68,9 +79,6 @@ header {
     font-weight: bold;
     color: white;
 }
-
-
-
 
 fieldset {
     display: flex;
@@ -232,6 +240,8 @@ input:not(:placeholder-shown):invalid {
 .bottom {
     display: flex;
     column-gap: 10.5vw;
+    margin-bottom: 4vh;
+
 }
 
 
@@ -243,7 +253,7 @@ button {
     top: 3vh;
     width: 130px;
     height: 30px;
-    margin-left: 5.5vw;
+    margin-left: 5.2vw;
     border-radius: 10px;
 }
 
@@ -275,17 +285,30 @@ button:hover {
     top: 3vh;
 }
 
-@media screen and (max-width: 1000px) {
+span {
+    color: white;
+    margin-left: 5.2vw;
+    margin-top: 2vh;
+    font-family: Main;
+}
+
+
+@media screen and (max-width: 1096px) {
     fieldset {
         column-gap: 5vw;
     }
 }
 
-@media screen and (max-width: 938px) {
+@media screen and (max-width: 1062px) {
     fieldset {
         column-gap: 4vw;
     }
+}
 
+@media screen and (max-width: 922px) {
+    fieldset {
+        column-gap: 3vw;
+    }
     .progress-circle::after, .progress-one::after,
     .progress-two::after, .progress-three::after,
     .progress-four::after, .progress-five::after,
@@ -295,27 +318,24 @@ button:hover {
     }
 }
 
-@media screen and (max-width: 876px) {
-    fieldset {
-        column-gap: 3vw;
-    }
-}
-
-@media screen and (max-width: 856px) {
+@media screen and (max-width: 815px) {
     fieldset {
         column-gap: 2vw;
     }
 }
 
-@media screen and (max-width: 820px) {
-    fieldset {
-        column-gap: 1vw;
-    }
+@media screen and (max-width: 786px) {
     .progress-circle::after, .progress-one::after,
     .progress-two::after, .progress-three::after,
     .progress-four::after, .progress-five::after,
     .progress-six::after {
         width: 75px;
         height: 75px;
+    }
+}
+
+@media screen and (max-width: 717px) {
+    #transparent-container {
+        font-size: 3vw;
     }
 }
