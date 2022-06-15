@@ -72,7 +72,6 @@ a#login {
 
 header {
     margin-left: 5vw;
-    margin-right: auto;
     margin-top: 10vh;
     font-family: Main;
     font-size: 2vw;
@@ -337,5 +336,35 @@ span {
 @media screen and (max-width: 717px) {
     #transparent-container {
         font-size: 3vw;
+    }
+}
+
+@media screen and (max-height:600px) {
+    header {
+        margin-top: 6vh;
+    }
+}
+
+@media screen and (max-height:560px) {
+    header {
+        margin-top: 4vh;
+    }
+}
+
+@media screen and (max-height:550px) {
+    fieldset {
+        margin-top: 4vh;
+    }
+}
+
+@media screen and (max-height:530px) {
+    fieldset {
+        margin-top: 3vh;
+    }
+}
+
+@media screen and (max-height:510px) {
+    fieldset {
+        margin-top: 1vh;
     }
 }
